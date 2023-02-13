@@ -1,1 +1,1 @@
-ssimple shell project for both Laby Owolabi and Joshua Monday
+Simple shell project for both Laby Owolabi and Joshua Monday
