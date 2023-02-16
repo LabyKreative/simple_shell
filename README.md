@@ -46,7 +46,7 @@ $ man ./man_1_page
 ```
 
 # Authors
-* Adeyemi Owolabi[Yahoo](labykreative@yahoo.com)
+* Adeyemi Owolabi [Yahoo](labykreative@yahoo.com)
 * Joshua Monday [Gmail](bumiche@gmail.com)
 	ALX Students. LOS Cohort 11.
 
