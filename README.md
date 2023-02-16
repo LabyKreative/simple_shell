@@ -30,13 +30,13 @@ As an example you can use the <b>ls</b> command for listing files in the current
 
 ```sh
 $ ls
-_atoi.c AUTHORS built_ins.c _environ.c _error_handler.c holberton.h Makefile
+_atoi.c AUTHORS built_ins.c _environ.c _error_handler.c main.h Makefile
 $ 
 ```
-The other mode is non-interactive. For this, the command should be passed thru a pipe
+Second mode is non-interactive. The command is passed by a pipe:
 ```
 $ echo "/bin/ls" | ./hsh
-_atoi.c AUTHORS built_ins.c _environ.c _error_handler.c holberton.h Makefile
+_atoi.c AUTHORS built_ins.c _environ.c _error_handler.c main.h Makefile
 ```
 
 # Manual
@@ -46,7 +46,7 @@ $ man ./man_1_page
 ```
 
 # Authors
-* LabyKreative [Yahoo](labykreative@yahoo.com)
+* Laby Owolaby [Yahoo](labykreative@yahoo.com)
 * Joshua Monday [Gmail](joshua@gmail.com)
 	ALX Students. LOS Cohort 11.
 
