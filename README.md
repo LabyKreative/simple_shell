@@ -1,4 +1,4 @@
-# Team work project on Simple shell - C programming done by Laby Owolabi and Joshua Monday.
+# Team work project on Simple shell - C programming done by Adeyemi Owolabi and Joshua Monday:
 
 The program provides an interface for users to get access to the kernel's services. The shell command interpreter. The shell is able to run some default commands and also have some built in functions for Man Page.
 
@@ -46,7 +46,7 @@ $ man ./man_1_page
 ```
 
 # Authors
-* Laby Owolaby [Yahoo](labykreative@yahoo.com)
-* Joshua Monday [Gmail](joshua@gmail.com)
+* Adeyemi Owolabi[Yahoo](labykreative@yahoo.com)
+* Joshua Monday [Gmail](bumiche@gmail.com)
 	ALX Students. LOS Cohort 11.
 
