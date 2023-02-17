@@ -42,7 +42,7 @@ _atoi.c AUTHORS built_ins.c _environ.c _error_handler.c main.h Makefile
 # Manual
 We added a man page in the repository, it can be run like this:
 ```
-$ man ./man_1_page
+$ man ./man_1_page.
 ```
 
 # Authors
