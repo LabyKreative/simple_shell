@@ -24,7 +24,7 @@ Then you are ready to use our simple shell.
 
 ##  How it works:
 
-The shell has two modes: **Interactive** in which the shell takes the commands from the standard input, executes them and gets ready to read another command-line.
+The shell has **Interactive** mode in which the shell takes the commands from the standard input, executes them and gets ready to read another command-line.
 
 As an example you can use the <b>ls</b> command for listing files in the current directory:
 
@@ -33,20 +33,8 @@ $ ls
 _atoi.c AUTHORS built_ins.c _environ.c _error_handler.c main.h Makefile
 $ 
 ```
-Second mode is non-interactive. The command is passed by a pipe:
-```
-$ echo "/bin/ls" | ./hsh
-_atoi.c AUTHORS built_ins.c _environ.c _error_handler.c main.h Makefile
-```
-
-# Manual
-We added a man page in the repository, it can be run like this:
-```
-$ man ./man_1_page
-```
 
 # Authors
 * Adeyemi Owolabi [Yahoo](labykreative@yahoo.com)
 * Joshua Monday [Gmail](bumiche@gmail.com)
 	ALX Students. LOS Cohort 11.
-
