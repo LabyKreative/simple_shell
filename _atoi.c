@@ -1,37 +1,72 @@
 #include "main.h"
+
 /**
- * _atoi - function that looks for numbers of a string and
- * convert them into integers.
- * @s: pointer to the string to be iterated.
- * Return: number and sign of an array, or 0 if no number.
+ * interactive - returns true if shell is interactive mode
+ * @info: struct address
+ *
+ * Return: 1 if interactive mode, 0 otherwise
  */
+int interactive(info_t *info)
+{
+	return (isatty(STDIN_FILENO) && info->readfd <= 2);
+}
+
+/**
+ * is_delim - checks if character is a delimeter
+ * @c: the char to check
+ * @delim: the delimeter string
+ * Return: 1 if true, 0 if false
+ */
+int is_delim(char c, char *delim)
+{
+	while (*delim)
+		if (*delim++ == c)
+			return (1);
+	return (0);
+}
+
+/**
+ * _isalpha - checks for alphabetic character
+ * @c: The character to input
+ * Return: 1 if c is alphabetic, 0 otherwise
+ */
+
+int _isalpha(int c)
+{
+	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
+		return (1);
+	else
+		return (0);
+}
+
+/**
+ * _atoi - converts a string to an integer
+ * @s: the string to be converted
+ * Return: 0 if no numbers in string, converted number otherwise
+ */
+
 int _atoi(char *s)
 {
-	int array;
-	int sign;
-	int num;
-	int out;
+	int i, sign = 1, flag = 0, output;
+	unsigned int result = 0;
 
-	num = 0;
-	sign = 0;
-	out = 0;
-	for (array = 0; s[array] != '\0'; array++)
+	for (i = 0;  s[i] != '\0' && flag != 2; i++)
 	{
-		if (s[array] == '-')
+		if (s[i] == '-')
+			sign *= -1;
+		if (s[i] >= '0' && s[i] <= '9')
 		{
-			sign++;
+			flag = 1;
+			result *= 10;
+			result += (s[i] - '0');
 		}
-		if (s[array] >= 48 && s[array] <= 57)
-		{
-			num = num * 10 - (s[array] - '0');
-			out = 1;
-		}
-		else if (out == 1)
-		{
-			break;
-		}
+		else if (flag == 1)
+			flag = 2;
 	}
-	if ((sign - 1) % 2 != 0)
-		num = num * -1;
-	return (num);
+
+	if (sign == -1)
+		output = -result;
+	else
+		output = result;
+	return (output);
 }
