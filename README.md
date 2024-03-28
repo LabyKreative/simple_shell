@@ -2,7 +2,7 @@
 
 The program provides an interface for users to get access to the kernel's services. The shell command interpreter. The shell is able to run some default commands and also have some built in functions for Man Page.
 
-## Make this project yours
+## Make this project your own ☺️
 
 Clone the repo.
 
